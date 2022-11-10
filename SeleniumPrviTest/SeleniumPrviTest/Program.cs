@@ -14,6 +14,7 @@ namespace SeleniumPrviTest
         {
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.saucedemo.com/");
+
             driver.Manage().Window.Maximize();
 
             IWebElement userName = driver.FindElement(By.Id("user-name"));
